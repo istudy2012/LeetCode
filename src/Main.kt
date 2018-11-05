@@ -12,8 +12,7 @@ object Main {
     }
 
     private fun doWork() {
-        val S = "cba"
-        val T = "cbadca"
-        println(solution.customSortString(S, T))
+        val arrays = intArrayOf(1, 3, 4, 2, 2)
+        println(solution.findDuplicate(arrays))
     }
 }
