@@ -1,8 +1,14 @@
+package array;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class Solution {
+public class CombinationSum2 {
+
+    /**
+     * https://leetcode.com/problems/combination-sum-ii/
+     */
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Arrays.sort(candidates);
 
