@@ -1,7 +1,12 @@
+package array;
+
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+public class FindAllNumbersDisappeared {
+    /**
+     * https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+     */
     public List<Integer> findDisappearedNumbers(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             int j = nums[i];
