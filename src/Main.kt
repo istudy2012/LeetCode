@@ -12,7 +12,7 @@ object Main {
     }
 
     private fun doWork() {
-        val arrays = intArrayOf(1, 3, 4, 2, 2)
-        println(solution.findDuplicate(arrays))
+        val arrays = intArrayOf(4,3,2,7,8,2,3,1)
+        println(solution.findDuplicates(arrays))
     }
 }
