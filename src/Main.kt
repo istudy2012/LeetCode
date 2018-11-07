@@ -12,7 +12,7 @@ object Main {
     }
 
     private fun doWork() {
-        val arrays = intArrayOf(4,3,2,7,8,2,3,1)
-        println(solution.findDisappearedNumbers(arrays))
+        val arrays = intArrayOf(8, 7, 4, 3)
+        println(solution.combinationSum(arrays, 11))
     }
 }
