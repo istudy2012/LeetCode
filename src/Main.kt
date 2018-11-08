@@ -12,7 +12,7 @@ object Main {
     }
 
     private fun doWork() {
-        val arrays = intArrayOf(10,1,2,7,6,1,5)
-        println(solution.combinationSum2(arrays, 8))
+        println(solution.combinationSum3New(3, 7))
+        println(solution.combinationSum3New(3, 9))
     }
 }

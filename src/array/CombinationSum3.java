@@ -1,8 +1,14 @@
+package array;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-class Solution {
+public class CombinationSum3 {
 
+    /**
+     * https://leetcode.com/problems/combination-sum-iii/
+     */
     public List<List<Integer>> combinationSum3(int k, int n) {
         List<List<Integer>> result = new ArrayList<>();
         traverse(k, n, 1, new ArrayList<>(), result);
@@ -35,7 +41,7 @@ class Solution {
     }
 
     private void traverseNew(int k, int n, int i, List<Integer> list,
-                          List<List<Integer>> result) {
+                             List<List<Integer>> result) {
         if (n == 0) {
             if (k == 0) {
                 result.add(new ArrayList<>(list));
