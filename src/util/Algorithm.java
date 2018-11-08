@@ -1,3 +1,5 @@
+package util;
+
 public class Algorithm {
 
     public static void quickSort(int[] nums) {

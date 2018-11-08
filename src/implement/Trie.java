@@ -1,3 +1,5 @@
+package implement;
+
 public class Trie {
     private TrieNode root = new TrieNode();
 

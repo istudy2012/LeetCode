@@ -1,3 +1,5 @@
+package model;
+
 class Node {
     public boolean val;
     public boolean isLeaf;

@@ -1,3 +1,5 @@
+package implement;
+
 import java.util.Arrays;
 
 public class NumArray {
@@ -28,7 +30,7 @@ public class NumArray {
 }
 
 /**
- * Your NumArray object will be instantiated and called as such:
- * NumArray obj = new NumArray(nums);
+ * Your implement.NumArray object will be instantiated and called as such:
+ * implement.NumArray obj = new implement.NumArray(nums);
  * int param_1 = obj.sumRange(i,j);
  */

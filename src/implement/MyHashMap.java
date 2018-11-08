@@ -1,3 +1,5 @@
+package implement;
+
 public class MyHashMap {
     private float minFactor = 0.25f;
     private float maxFactor = 0.75f;

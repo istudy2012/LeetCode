@@ -1,3 +1,5 @@
+package model;
+
 public class ListNode {
     int val;
     ListNode next;
