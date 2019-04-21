@@ -1,4 +1,18 @@
-class Solution {
+package array;
+
+public class SearchInRotatedSortedArray33 {
+
+    public static void test() {
+        SearchInRotatedSortedArray33 solution = new SearchInRotatedSortedArray33();
+
+        int[] array = new int[]{4, 5, 6, 7, 0, 1, 2};
+        System.out.println(solution.search(array, 0));
+        System.out.println(solution.search(array, 3));
+
+        array = new int[]{3, 1};
+        System.out.println(solution.search(array, 1));
+    }
+
     public int search(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
             return -1;
@@ -69,4 +83,5 @@ class Solution {
 
         return -1;
     }
+
 }
