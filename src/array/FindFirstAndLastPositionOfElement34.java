@@ -1,4 +1,18 @@
-class Solution {
+package array;
+
+import java.util.Arrays;
+
+public class FindFirstAndLastPositionOfElement34 {
+
+    public static void test() {
+        FindFirstAndLastPositionOfElement34 solution = new FindFirstAndLastPositionOfElement34();
+
+        int[] array = new int[]{5,7,7,8,8,10};
+        System.out.println(Arrays.toString(solution.searchRange(array, 8)) );
+
+        System.out.println(Arrays.toString(solution.searchRange(array, 6)) );
+    }
+
     public int[] searchRange(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
             return new int[]{-1, -1};
@@ -31,4 +45,5 @@ class Solution {
 
         return new int[]{-1, -1};
     }
+
 }

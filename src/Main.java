@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,12 +14,10 @@ public class Main {
     private static void doWork() {
         Solution solution = new Solution();
 
-        int[] array = new int[]{4, 5, 6, 7, 0, 1, 2};
-        System.out.println(solution.search(array, 0));
-        System.out.println(solution.search(array, 3));
+        int[] array = new int[]{5,7,7,8,8,10};
+        System.out.println(Arrays.toString(solution.searchRange(array, 8)) );
 
-        array = new int[]{3, 1};
-        System.out.println(solution.search(array, 1));
+        System.out.println(Arrays.toString(solution.searchRange(array, 6)) );
     }
 
 }
