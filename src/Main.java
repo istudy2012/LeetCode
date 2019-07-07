@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import array.MyCalendar;
 
 public class Main {
 
@@ -12,12 +12,14 @@ public class Main {
     }
 
     private static void doWork() {
-        Solution solution = new Solution();
-
-        int[] array = new int[]{5,7,7,8,8,10};
-        System.out.println(Arrays.toString(solution.searchRange(array, 8)) );
-
-        System.out.println(Arrays.toString(solution.searchRange(array, 6)) );
+        test();
     }
 
+    private static void test() {
+        MyCalendar myCalendar = new MyCalendar();
+        System.out.println(myCalendar.book(47, 50));
+        System.out.println(myCalendar.book(33, 41));
+        System.out.println(myCalendar.book(39, 45));
+    }
+    
 }
