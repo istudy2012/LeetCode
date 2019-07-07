@@ -1,5 +1,6 @@
-class Solution {
+package array;
 
+public class ImageOverlap {
     public int largestOverlap(int[][] A, int[][] B) {
         int m = A.length;
         int n = A[0].length;
@@ -63,8 +64,8 @@ class Solution {
                 baseX = -dX;
                 baseY = dY;
                 break;
-                default:
-                    return 0;
+            default:
+                return 0;
 
         }
 

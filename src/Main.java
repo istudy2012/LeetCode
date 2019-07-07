@@ -16,10 +16,12 @@ public class Main {
     }
 
     private static void test() {
-        MyCalendar myCalendar = new MyCalendar();
-        System.out.println(myCalendar.book(47, 50));
-        System.out.println(myCalendar.book(33, 41));
-        System.out.println(myCalendar.book(39, 45));
+        Solution solution = new Solution();
+
+        int[][] A = new int[][] {{1,1,0},{0,1,0},{0,1,0}};
+        int[][] B = new int[][] {{0,0,0},{0,1,1},{0,0,1}};
+
+        System.out.println(solution.largestOverlap(A, B));
     }
-    
+
 }
