@@ -1,4 +1,6 @@
-class Solution {
+package array;
+
+public class SpiralMatrixII {
     public int[][] generateMatrix(int n) {
         int[] orientation = new int[]{0, 1, 2, 3};
         int currentValue = 1;

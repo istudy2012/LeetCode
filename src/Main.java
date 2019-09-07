@@ -1,5 +1,7 @@
 import array.MyCalendar;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,11 +19,8 @@ public class Main {
 
     private static void test() {
         Solution solution = new Solution();
-
-        int[][] A = new int[][] {{1,1,0},{0,1,0},{0,1,0}};
-        int[][] B = new int[][] {{0,0,0},{0,1,1},{0,0,1}};
-
-        System.out.println(solution.largestOverlap(A, B));
+        int[][] result = solution.generateMatrix(5);
+        System.out.println(Arrays.deepToString(result));
     }
 
 }
