@@ -1,6 +1,7 @@
 import array.MyCalendar;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -19,8 +20,10 @@ public class Main {
 
     private static void test() {
         Solution solution = new Solution();
-        int[][] result = solution.generateMatrix(5);
-        System.out.println(Arrays.deepToString(result));
+        String[] strs = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
+        List<List<String>> result = solution.groupAnagrams(strs);
+
+        System.out.println(result);
     }
 
 }
