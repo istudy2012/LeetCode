@@ -20,9 +20,8 @@ public class Main {
 
     private static void test() {
         Solution solution = new Solution();
-        String[] strs = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
-        List<List<String>> result = solution.groupAnagrams(strs);
 
+        List<List<Integer>> result = solution.combine(4, 2);
         System.out.println(result);
     }
 

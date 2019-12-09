@@ -1,8 +1,13 @@
+package backtrack;
+
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
-
+/**
+ * https://leetcode.com/problems/combinations/
+ */
+public class Combinations {
+    
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList<>();
 
