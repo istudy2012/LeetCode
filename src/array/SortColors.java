@@ -1,4 +1,6 @@
-class Solution {
+package array;
+
+public class SortColors {
     public void sortColors(int[] nums) {
         int i0 = 0;
         int i2 = nums.length - 1;
