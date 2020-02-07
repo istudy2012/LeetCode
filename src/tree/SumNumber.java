@@ -1,4 +1,6 @@
-class Solution {
+package tree;
+
+public class SumNumber {
     public int sumNumbers(TreeNode root) {
         return sumTree(0, root);
     }
@@ -14,5 +16,15 @@ class Solution {
 
         int newPrefix = (prefix + root.val) * 10;
         return sumTree(newPrefix, root.left) + sumTree(newPrefix, root.right);
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }

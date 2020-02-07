@@ -21,18 +21,11 @@ public class Main {
     private static void test() {
         Solution solution = new Solution();
 
-        char[][] board = new char[][] {
-            {'5','3','.','.','7','.','.','.','.'},
-            {'6','.','.','1','9','5','.','.','.'},
-            {'.','9','8','.','.','.','.','6','.'},
-            {'8','.','.','.','6','.','.','.','3'},
-            {'4','.','.','8','.','3','.','.','1'},
-            {'7','.','.','.','2','.','.','.','6'},
-            {'.','6','.','.','.','.','2','8','.'},
-            {'.','.','.','4','1','9','.','.','5'},
-            {'.','.','.','.','8','.','.','7','9'}
+        int[][] array = new int[][] {
+            {1,3},{2,6},{8,10},{15,18}
         };
-        System.out.println(solution.isValidSudoku(board));
+        int[][] result = solution.merge(array);
+        System.out.println(Arrays.deepToString(result));
     }
 
 }
