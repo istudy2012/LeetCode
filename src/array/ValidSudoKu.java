@@ -1,4 +1,7 @@
-class Solution {
+package array;
+
+public class ValidSudoKu {
+
     public boolean isValidSudoku(char[][] board) {
         if (board == null) {
             return false;
@@ -57,4 +60,5 @@ class Solution {
 
         return true;
     }
+
 }
