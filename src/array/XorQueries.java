@@ -1,4 +1,6 @@
-class Solution {
+package array;
+
+public class XorQueries {
     public int[] xorQueriesOld(int[] arr, int[][] queries) {
         int[] result = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {
