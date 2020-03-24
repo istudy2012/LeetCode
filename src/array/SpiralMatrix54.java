@@ -1,8 +1,9 @@
+package array;
+
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
-
+public class SpiralMatrix54 {
     public List<Integer> spiralOrder(int[][] matrix) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return new ArrayList<>();
@@ -68,5 +69,4 @@ class Solution {
             }
         }
     }
-
 }

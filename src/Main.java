@@ -21,11 +21,20 @@ public class Main {
     private static void test() {
         Solution solution = new Solution();
 
-        int[][] array = new int[][] {
-            {1,3},{2,6},{8,10},{15,18}
-        };
-        int[][] result = solution.merge(array);
-        System.out.println(Arrays.deepToString(result));
+//        int[][] arr = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//
+//        System.out.println(solution.spiralOrder(arr));
+//
+//        int[][] arr1 = new int[][]{{1, 2, 3, 4},
+//                {5, 6, 7, 8},
+//                {9, 10, 11, 12}};
+//        System.out.println(solution.spiralOrder(arr1));
+//
+//        int[][] arr2 = new int[][]{{6, 9, 7}};
+//        System.out.println(solution.spiralOrder(arr2));
+
+        int[][] arr3 = new int[][]{{1,2,3,4,5,6,7,8,9,10},{11,12,13,14,15,16,17,18,19,20}};
+        System.out.println(solution.spiralOrder(arr3));
     }
 
 }
