@@ -1,5 +1,7 @@
 import array.MyCalendar;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,20 +23,16 @@ public class Main {
     private static void test() {
         Solution solution = new Solution();
 
-//        int[][] arr = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-//
-//        System.out.println(solution.spiralOrder(arr));
-//
-//        int[][] arr1 = new int[][]{{1, 2, 3, 4},
-//                {5, 6, 7, 8},
-//                {9, 10, 11, 12}};
-//        System.out.println(solution.spiralOrder(arr1));
-//
-//        int[][] arr2 = new int[][]{{6, 9, 7}};
-//        System.out.println(solution.spiralOrder(arr2));
+        String line = "[1,2,3,4,5]";
+        ListNode head = Util.stringToListNode(line);
+        int k = 2;
 
-        int[][] arr3 = new int[][]{{1,2,3,4,5,6,7,8,9,10},{11,12,13,14,15,16,17,18,19,20}};
-        System.out.println(solution.spiralOrder(arr3));
+        ListNode ret = solution.rotateRight(head, k);
+
+        String out = Util.listNodeToString(ret);
+
+        System.out.print(out);
     }
+
 
 }

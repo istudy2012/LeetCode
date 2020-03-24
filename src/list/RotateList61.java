@@ -1,4 +1,6 @@
-class Solution {
+package list;
+
+public class RotateList61 {
 
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null || head.next == null) {
@@ -24,4 +26,14 @@ class Solution {
         p.next = null;
         return h;
     }
+
+    public class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
+    }
+
 }
