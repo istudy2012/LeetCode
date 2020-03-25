@@ -1,4 +1,6 @@
-class Solution {
+package array;
+
+public class CountAndSay38 {
 
     public String countAndSay(int n) {
         if (n <= 0) {

@@ -23,15 +23,9 @@ public class Main {
     private static void test() {
         Solution solution = new Solution();
 
-        String line = "[1,2,3,4,5]";
-        ListNode head = Util.stringToListNode(line);
-        int k = 2;
 
-        ListNode ret = solution.rotateRight(head, k);
 
-        String out = Util.listNodeToString(ret);
-
-        System.out.print(out);
+        System.out.println(solution.countAndSay(5));
     }
 
 
