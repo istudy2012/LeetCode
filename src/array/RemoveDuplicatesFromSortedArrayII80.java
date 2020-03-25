@@ -1,4 +1,6 @@
-class Solution {
+package array;
+
+public class RemoveDuplicatesFromSortedArrayII80 {
 
     public int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0) {

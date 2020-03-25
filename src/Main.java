@@ -1,9 +1,4 @@
-import array.MyCalendar;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.List;
 
 public class Main {
 
@@ -23,9 +18,10 @@ public class Main {
     private static void test() {
         Solution solution = new Solution();
 
+        int[] arr = new int[]{ 0,0,1,1,1,1,2,3,3};
 
-
-        System.out.println(solution.countAndSay(5));
+        System.out.println(solution.removeDuplicates(arr));
+        System.out.println(Arrays.toString(arr));
     }
 
 
