@@ -18,10 +18,14 @@ public class Main {
     private static void test() {
         Solution solution = new Solution();
 
-        int[] arr = new int[]{ 0,0,1,1,1,1,2,3,3};
+        int[] nums0 = new int[] {0};
+        System.out.println(solution.jump(nums0));
 
-        System.out.println(solution.removeDuplicates(arr));
-        System.out.println(Arrays.toString(arr));
+        int[] nums1 = new int[] {2,3,1,1,4};
+        System.out.println(solution.jump(nums1));
+
+        int[] nums2 = new int[] {2,3,0,1,4};
+        System.out.println(solution.jump(nums2));
     }
 
 

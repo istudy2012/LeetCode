@@ -1,28 +1,33 @@
 class Solution {
 
-    public int removeDuplicates(int[] nums) {
-        if (nums == null || nums.length == 0) {
+    /**
+     * Key point: The position furthest from the tail is the best position
+     */
+    public int jump(int[] nums) {
+        if (nums == null || nums.length <= 1) {
             return 0;
         }
 
-        int len = nums.length;
-        int p = 0;
+        int n = nums.length - 1;
         int count = 1;
-        for (int i = 1; i < len; i++) {
-            if (nums[i] != nums[p]) {
-                p++;
-                nums[p] = nums[i];
-                count = 1;
-            } else {
-                if (count < 2) {
-                    p++;
-                    nums[p] = nums[i];
-                    count++;
-                }
+        int k = find(nums, n);
+        while (k > 0) {
+            count++;
+            k = find(nums, k);
+        }
+
+        return count;
+    }
+
+    private int find(int[] nums, int n) {
+        int k = -1;
+        for (int i = 0; i < n; i++) {
+            if ((i + nums[i]) >= n) {
+                k = i;
+                break;
             }
         }
 
-        return p + 1;
+        return k;
     }
-
 }
