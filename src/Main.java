@@ -18,14 +18,8 @@ public class Main {
     private static void test() {
         Solution solution = new Solution();
 
-        int[] nums0 = new int[] {0};
-        System.out.println(solution.jump(nums0));
-
-        int[] nums1 = new int[] {2,3,1,1,4};
-        System.out.println(solution.jump(nums1));
-
-        int[] nums2 = new int[] {2,3,0,1,4};
-        System.out.println(solution.jump(nums2));
+        String[] strs = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
+        System.out.println( solution.groupAnagrams(strs));
     }
 
 
