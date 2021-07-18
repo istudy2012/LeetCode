@@ -5,7 +5,7 @@ import model.TreeNode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BuildTree {
+public class PreAndInBuildTree {
 
     private Map<Integer, Integer> indexMap = new HashMap<>();
 

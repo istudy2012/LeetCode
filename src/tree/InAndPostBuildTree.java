@@ -1,9 +1,11 @@
+package tree;
+
 import model.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Solution {
+public class InAndPostBuildTree {
 
     private Map<Integer, Integer> indexMap = new HashMap<>();
 
