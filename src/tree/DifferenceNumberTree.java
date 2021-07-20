@@ -1,7 +1,9 @@
+package tree;
+
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+public class DifferenceNumberTree {
 
     private Map<Integer, Integer> map = new HashMap<>();
 
@@ -36,4 +38,5 @@ class Solution {
 
         return arr[n];
     }
+
 }

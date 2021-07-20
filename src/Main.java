@@ -18,8 +18,10 @@ public class Main {
     private static void test() {
         Solution solution = new Solution();
 
-        String[] strs = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
-        System.out.println( solution.groupAnagrams(strs));
+        System.out.println( solution.numTrees2(3));
+        System.out.println( solution.numTrees2(1));
+        System.out.println( solution.numTrees2(4));
+        System.out.println( solution.numTrees2(5));
     }
 
 
