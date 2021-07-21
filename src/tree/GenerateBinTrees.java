@@ -1,9 +1,11 @@
+package tree;
+
 import model.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+public class GenerateBinTrees {
 
     public List<TreeNode> generateTrees(int n) {
         return generateTrees(1, n);
